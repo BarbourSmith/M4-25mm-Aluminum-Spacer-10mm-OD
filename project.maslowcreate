@@ -41,12 +41,44 @@
                     "x": 223,
                     "y": 126,
                     "uniqueID": 700398,
+                    "ioValues": []
+                },
+                {
+                    "atomType": "Extrude",
+                    "name": "Extrude",
+                    "x": 346,
+                    "y": 127,
+                    "uniqueID": 547025,
                     "ioValues": [
                         {
-                            "name": "geometry1",
-                            "ioValue": ""
+                            "name": "height",
+                            "ioValue": 25
                         }
                     ]
+                },
+                {
+                    "atomType": "Add BOM Tag",
+                    "name": "Add BOM Tag",
+                    "x": 490,
+                    "y": 119,
+                    "uniqueID": 407959,
+                    "ioValues": [],
+                    "BOMitem": {
+                        "BOMitemName": "25mm M4 Spacer",
+                        "numberNeeded": 1,
+                        "costUSD": 2.06,
+                        "source": "https://www.mcmaster.com/94669a092",
+                        "totalNeeded": 0
+                    }
+                },
+                {
+                    "atomType": "Color",
+                    "name": "Color",
+                    "x": 700,
+                    "y": 151,
+                    "uniqueID": 366081,
+                    "ioValues": [],
+                    "selectedColorIndex": "5"
                 },
                 {
                     "atomType": "Output",
@@ -57,12 +89,40 @@
                 }
             ],
             "allConnectors": [
-                null,
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry1",
+                    "ap1ID": 213254,
+                    "ap2ID": 700398
+                },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "geometry2",
                     "ap1ID": 747192,
                     "ap2ID": 700398
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap1ID": 700398,
+                    "ap2ID": 547025
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap1ID": 547025,
+                    "ap2ID": 407959
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap1ID": 407959,
+                    "ap2ID": 366081
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap1ID": 366081
                 }
             ],
             "fileTypeVersion": 1
